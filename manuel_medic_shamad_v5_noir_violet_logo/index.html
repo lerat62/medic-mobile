@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Médic SHAMAD V3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="app">
+  <section class="cover" id="cover">
+    <div class="cover-book">
+      <div class="cover-top">DOCUMENT OFFICIEL · OPÉRATION SHAMAD</div>
+      <img class="main-logo" src="assets/logo-medic-violet.png" alt="Logo SHAMAD Medical Academy">
+      <p class="motto">Un soin. Une vie. Une mission.</p>
+      <div class="cover-ecg"></div>
+      <button id="openBtn">Ouvrir le manuel</button>
+    </div>
+  </section>
+
+  <section class="reader hidden" id="reader">
+    <div class="book">
+      <div class="bookmark">SHAMAD</div>
+      <div class="spine"></div>
+      <article class="page left" id="leftPage"></article>
+      <article class="page right" id="rightPage"></article>
+      <div class="flip" id="flip"></div>
+    </div>
+
+    <nav class="nav">
+      <button id="prevBtn">← Page précédente</button>
+      <strong id="pageCount">1 / 12</strong>
+      <button id="nextBtn">Page suivante →</button>
+    </nav>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
